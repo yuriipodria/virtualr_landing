@@ -1,9 +1,12 @@
-import './index.css'
+import Header from "./components/Header";
+import "./index.css";
 
 function App() {
   return (
-    <h1 className='bg-red-50'>adsadsggdsa</h1>
-  )
+    <>
+      <Header />
+    </>
+  );
 }
 
-export default App
+export default App;
