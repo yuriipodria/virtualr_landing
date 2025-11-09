@@ -52,7 +52,7 @@ const Header = () => {
 
           {menuOpen && (
             <>
-              <div className="fixed top-full right-0 z-20 flex w-full flex-col gap-8 bg-neutral-900 p-12 lg:hidden">
+              <div className="fixed top-[calc(100%+1px)] right-0 z-20 flex w-full flex-col gap-12 bg-neutral-900 p-12 lg:hidden">
                 <ul className="flex flex-col items-center justify-center gap-8">
                   {navItems.map((item) => (
                     <li key={item.label}>
