@@ -3,21 +3,21 @@ import { checklistItems } from "../constants";
 
 const WorkflowSection = () => {
   return (
-    <section className="mt-20">
-      <h2 className="text-center text-3xl tracking-wide sm:text-5xl lg:text-6xl">
+    <section className="mt-20" id="workflow-section">
+      <h2 className="heading-primary">
         Accelerate Your <span className="gradient-text">Coding flow</span>
       </h2>
 
-      <div className="mt-6 flex gap-8">
+      <div className="mt-10 flex flex-col gap-8 lg:flex-row">
         <img
           src="/src/assets/code.jpg"
           alt="code"
-          className="w-full lg:w-1/2"
+          className="w-full object-cover lg:w-1/2"
         />
 
         <ul className="mt-10 flex flex-col gap-12">
           {checklistItems.map((item) => (
-            <li key={item.title} className="flex gap-4">
+            <li key={item.title} className="flex justify-center gap-4">
               <div className="flex h-10 w-10 items-center justify-center rounded-full border-green-400 bg-neutral-900 p-2 text-green-400">
                 <CheckCircle2 />
               </div>

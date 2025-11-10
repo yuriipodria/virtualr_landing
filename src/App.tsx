@@ -1,6 +1,7 @@
 import FeaturesSection from "./components/FeaturesSection";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
+import PricingSection from "./components/PricingSection";
 import WorkflowSection from "./components/WorkflowSection";
 import "./index.css";
 
@@ -19,6 +20,8 @@ function App() {
 
       <main className="main-container">
         <WorkflowSection />
+
+        <PricingSection />
       </main>
     </>
   );

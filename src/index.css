@@ -15,4 +15,8 @@
   .gradient-text {
     @apply bg-linear-to-r from-orange-500 to-red-800 bg-clip-text text-transparent;
   }
+
+  .heading-primary {
+    @apply text-center text-4xl tracking-wide sm:text-6xl lg:text-7xl;
+  }
 }
