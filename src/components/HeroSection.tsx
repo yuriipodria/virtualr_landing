@@ -1,6 +1,6 @@
 const HeroSection = () => {
   return (
-    <div className="mt-6 flex flex-col items-center gap-10 lg:mt-20">
+    <section className="mt-6 flex flex-col items-center gap-10 lg:mt-20">
       <h1 className="text-center text-4xl tracking-wide sm:text-6xl lg:text-7xl">
         VirtualR build tools
         <span className="bg-linear-to-r from-orange-500 to-red-800 bg-clip-text text-transparent">
@@ -49,7 +49,7 @@ const HeroSection = () => {
           Your browser doesn't support the video tag
         </video>
       </div>
-    </div>
+    </section>
   );
 };
 
