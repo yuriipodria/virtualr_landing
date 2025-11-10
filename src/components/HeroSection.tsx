@@ -2,11 +2,7 @@ const HeroSection = () => {
   return (
     <section className="mt-6 flex flex-col items-center gap-10 lg:mt-20">
       <h1 className="text-center text-4xl tracking-wide sm:text-6xl lg:text-7xl">
-        VirtualR build tools
-        <span className="bg-linear-to-r from-orange-500 to-red-800 bg-clip-text text-transparent">
-          {" "}
-          for developers
-        </span>
+        VirtualR build tools <span className="gradient-text">for developers</span>
       </h1>
 
       <p className="max-w-4xl text-center text-lg text-neutral-500">

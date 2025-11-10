@@ -6,3 +6,13 @@
   font-family: "Poppins", sans-serif;
   color-scheme: dark;
 }
+
+@layer components {
+  .main-container {
+    @apply mx-auto max-w-7xl px-6;
+  }
+
+  .gradient-text {
+    @apply bg-linear-to-r from-orange-500 to-red-800 bg-clip-text text-transparent;
+  }
+}

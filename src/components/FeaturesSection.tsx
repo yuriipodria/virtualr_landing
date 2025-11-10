@@ -1,19 +1,14 @@
 import { features } from "../constants";
-
 const FeaturesSection = () => {
   return (
-    <section className="relative mt-20 border-b border-neutral-800">
+    <section className="relative mt-20">
       <div className="text-center">
         <span className="rounded-full bg-neutral-900 px-2 py-1 text-sm font-medium text-orange-500 uppercase">
           Features
         </span>
 
         <h2 className="mt-10 text-3xl tracking-wide sm:text-5xl lg:mt-20 lg:text-6xl">
-          Easily build
-          <span className="bg-linear-to-r from-orange-500 to-red-800 bg-clip-text text-transparent">
-            {" "}
-            your code
-          </span>
+          Easily build <span className="gradient-text">your code</span>
         </h2>
       </div>
 
