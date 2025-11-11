@@ -1,8 +1,11 @@
 import { features } from "../constants";
+import { fadeInContent, fadeInHeading } from "../constants/animations";
+import { motion } from "framer-motion";
+
 const FeaturesSection = () => {
   return (
     <section className="relative mt-20" id="features-section">
-      <div className="text-center">
+      <motion.div className="text-center" {...fadeInHeading}>
         <span className="rounded-full bg-neutral-900 px-2 py-1 text-sm font-medium text-orange-500 uppercase">
           Features
         </span>
@@ -10,11 +13,11 @@ const FeaturesSection = () => {
         <h2 className="mt-10 text-3xl tracking-wide sm:text-5xl lg:mt-20 lg:text-6xl">
           Easily build <span className="gradient-text">your code</span>
         </h2>
-      </div>
+      </motion.div>
 
       <div className="mt-10 mb-20 grid grid-cols-1 gap-x-4 gap-y-20 sm:grid-cols-2 lg:mt-20 lg:grid-cols-3">
         {features.map((feature) => (
-          <div key={feature.text} className="flex">
+          <motion.div key={feature.text} className="flex" {...fadeInContent}>
             <div className="mx-8 my-2 h-max rounded-full bg-neutral-900 p-2 text-orange-700">
               {feature.icon}
             </div>
@@ -26,7 +29,7 @@ const FeaturesSection = () => {
                 {feature.description}
               </p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

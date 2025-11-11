@@ -1,20 +1,24 @@
+import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import { pricingOptions } from "../constants";
+import { fadeInContent, fadeInHeading } from "../constants/animations";
 
 const PricingSection = () => {
   return (
     <section className="mt-20 lg:mt-10" id="pricing-section">
-      <h1 className="heading-primary">Pricing</h1>
+      <motion.h1 className="heading-primary" {...fadeInHeading}>
+        Pricing
+      </motion.h1>
 
       <div className="mt-8 flex flex-col items-center justify-between gap-8 lg:flex-row lg:gap-4">
         {pricingOptions.map((item) => (
-          <div
+          <motion.div
             key={item.title}
             className="w-3/4 flex-1 rounded-xl border border-neutral-700 p-10 lg:w-auto lg:whitespace-nowrap"
+            {...fadeInContent}
           >
             <h2 className="text-4xl">
               {item.title}
-
               {item.title === "Pro" && (
                 <span className="gradient-text text-xl"> (Most popular)</span>
               )}
@@ -34,7 +38,6 @@ const PricingSection = () => {
                   <div className="flex h-4 w-4 items-center justify-center">
                     <Check />
                   </div>
-
                   {feature}
                 </li>
               ))}
@@ -48,7 +51,7 @@ const PricingSection = () => {
             >
               Subscribe
             </button>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

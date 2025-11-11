@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { navItems } from "../constants";
 import { Menu, X } from "lucide-react";
+import logo from "../assets/logo.png";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,11 +15,7 @@ const Header = () => {
       <nav className="relative container mx-auto px-4 text-sm">
         <div className="flex items-center justify-between">
           <a href="#" className="flex shrink-0 cursor-pointer items-center">
-            <img
-              className="mr-2 h-10 w-10"
-              src="/src/assets/logo.png"
-              alt="logo"
-            />
+            <img className="mr-2 h-10 w-10" src={logo} alt="logo" />
 
             <span className="text-xl tracking-tight">VirtualR</span>
           </a>
