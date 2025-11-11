@@ -12,17 +12,24 @@ const HeroSection = () => {
         into impressive reality
       </p>
 
-      <div className="flex justify-center">
-        <a
-          href="#"
-          className="mx-3 rounded-md bg-linear-to-r from-orange-500 to-orange-800 px-4 py-3"
+      <div className="flex justify-center gap-6">
+        <button
+          className="cursor-pointer rounded-md bg-linear-to-r from-orange-500 to-orange-800 px-4 py-3"
+          onClick={() => {
+            alert("You’re being redirected to the 'Get Started' page");
+          }}
         >
           Start for free
-        </a>
+        </button>
 
-        <a href="#" className="mx-3 rounded-md border px-4 py-3">
+        <button
+          className="cursor-pointer rounded-md border px-4 py-3"
+          onClick={() => {
+            alert("You're being redirected to the documentation page");
+          }}
+        >
           Documentation
-        </a>
+        </button>
       </div>
 
       <div className="mt-8 flex justify-center">

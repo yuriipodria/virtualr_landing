@@ -13,7 +13,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 border-b border-neutral-700/80 py-3 backdrop-blur-lg">
       <nav className="relative container mx-auto px-4 text-sm">
         <div className="flex items-center justify-between">
-          <div className="flex shrink-0 items-center">
+          <a href="#" className="flex shrink-0 cursor-pointer items-center">
             <img
               className="mr-2 h-10 w-10"
               src="/src/assets/logo.png"
@@ -21,7 +21,7 @@ const Header = () => {
             />
 
             <span className="text-xl tracking-tight">VirtualR</span>
-          </div>
+          </a>
 
           <ul className="hidden gap-12 lg:flex">
             {navItems.map((item) => (
@@ -32,16 +32,23 @@ const Header = () => {
           </ul>
 
           <div className="hidden items-center gap-12 lg:flex">
-            <a href="#" className="rounded-md border px-3 py-2">
+            <button
+              onClick={() => {
+                alert("You’re being redirected to the login page");
+              }}
+              className="cursor-pointer rounded-md border px-3 py-2"
+            >
               Sign In
-            </a>
+            </button>
 
-            <a
-              href="#"
-              className="rounded-md bg-linear-to-r from-orange-500 to-orange-800 px-3 py-2"
+            <button
+              className="cursor-pointer rounded-md bg-linear-to-r from-orange-500 to-orange-800 px-3 py-2"
+              onClick={() => {
+                alert("You’re being redirected to the registration page");
+              }}
             >
               Create an account
-            </a>
+            </button>
           </div>
 
           <div className="flex items-center lg:hidden">
@@ -62,16 +69,23 @@ const Header = () => {
                 </ul>
 
                 <div className="flex justify-center gap-6">
-                  <a href="#" className="rounded-md border px-3 py-2">
+                  <button
+                    onClick={() => {
+                      alert("You’re being redirected to the login page");
+                    }}
+                    className="cursor-pointer rounded-md border px-3 py-2"
+                  >
                     Sign In
-                  </a>
+                  </button>
 
-                  <a
-                    href="#"
-                    className="rounded-md bg-linear-to-r from-orange-500 to-orange-800 px-3 py-2"
+                  <button
+                    className="cursor-pointer rounded-md bg-linear-to-r from-orange-500 to-orange-800 px-3 py-2"
+                    onClick={() => {
+                      alert("You’re being redirected to the registration page");
+                    }}
                   >
                     Create an account
-                  </a>
+                  </button>
                 </div>
               </div>
             </>

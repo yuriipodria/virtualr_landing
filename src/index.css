@@ -7,16 +7,14 @@
   color-scheme: dark;
 }
 
-@layer components {
-  .main-container {
-    @apply mx-auto max-w-7xl px-6;
-  }
+@utility main-container {
+  @apply mx-auto max-w-7xl px-6;
+}
 
-  .gradient-text {
-    @apply bg-linear-to-r from-orange-500 to-red-800 bg-clip-text text-transparent;
-  }
+@utility gradient-text {
+  @apply bg-linear-to-r from-orange-500 to-red-800 bg-clip-text text-transparent;
+}
 
-  .heading-primary {
-    @apply text-center text-4xl tracking-wide sm:text-6xl lg:text-7xl;
-  }
+@utility heading-primary {
+  @apply text-center text-4xl tracking-wide sm:text-6xl lg:text-7xl;
 }
